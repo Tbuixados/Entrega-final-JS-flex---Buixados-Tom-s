@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entrega final JS flex - Buixados Tomás</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+
+  </head>
+  <body>
+    <div class="task-list-container">
+      <h1 class="title">To Do List</h1>
+
+        <form action="" class="new-task-form">
+          <div class="new-task-container">
+
+            <input
+              type="text"
+              id="new-task-name"
+              placeholder="Add a new task..."
+            />
+            <button id="new-task-button">+</button>
+          </div>
+
+        </form>
+
+      <div class="filters">
+        <div class="left-filters">
+        <div class="filter">Pending</div>
+        <div class="filter">Completed</div>
+        <div class="filter">All</div>
+      </div>
+      <div>
+        <div class="filter">
+          <button class="delete-all-button" onclick="deleteAll()">Delete all</button>
+        </div>
+      </div>
+      </div>
+
+      <div class="list-container">
+
+        <ul class="task-list" ></ul>
+      </div>
+    </div>
+  </body>
+</html>
